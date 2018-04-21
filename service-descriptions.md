@@ -4,7 +4,8 @@ A client requests a service. Service providers respond with their offers. Then t
 
 ## Examples
 ### Requests for service
-```{
+```
+{
     service: "car-charging",
     area: {
         type: "Rectangle",
@@ -14,17 +15,21 @@ A client requests a service. Service providers respond with their offers. Then t
     unit: "kW/h",
     max-price: 0.003,
     currency: "eth"
-}```
+}
+```
 
-```{
+```
+{
     service: "passenger-ride",
     start: [1, 2],
     finish: [3, 5],
     max-price: 0.1,
     currency: "eth"
-}```
+}
+```
 
-```{
+```
+{
     service: "cargo-transport",
     start: [1, 2],
     finish: [3, 5],
@@ -33,5 +38,5 @@ A client requests a service. Service providers respond with their offers. Then t
     dimensions: [1, 2, 3],
     max-price: 1,
     currency: "eth"
-}```
-
+}
+```
