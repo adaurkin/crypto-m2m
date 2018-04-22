@@ -27,7 +27,6 @@ if (onRPi) {
   blueLed = new Gpio(18, 'out')
 }
 
-// roomName = 'car-charging'
 roomName = 'm2m:Minsk:car-charging'
 
 stateAvailable = 0
@@ -39,9 +38,10 @@ offer = '{type: "offer", price: 1, currency: "ETH", place: [1,2]}'
 
 state = stateAvailable
 
+var room
 // IPFS node is ready, so we can start using ipfs-pubsub-room
 ipfs.on('ready', () => {
-  const room = Room(ipfs, roomName)
+  room = Room(ipfs, roomName)
 
   room.on('peer joined', (peer) => {
     console.log('Peer joined the room', peer)
@@ -94,25 +94,9 @@ function onMessage(message) {
       }
       break;
   }
-
-  // state = state+1
-  // console.log(state)
-  // let green = state % 2
-  // let red = state % 3 % 2
-  // console.log('green: ', green)
-  // console.log('red: ', red)
-  // if (onRPi) {
-  //   greenLed.writeSync(green);
-  //   redLed.writeSync(red);
-  // }
 }
 
 function setState(newState) {
-  // if (newState == stateAvailable) {
-  //   greenLed = 1
-  //   redLed = 0
-  //   blueLed = 0
-  // }
   switch(newState) {
     case stateAvailable:
       greenLed = 1

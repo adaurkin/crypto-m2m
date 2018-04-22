@@ -17,10 +17,10 @@ var stdin = process.openStdin();
 
 roomName = 'm2m:Minsk:car-charging'
 
-var room
 state = 0
 provider = ""
 
+var room
 // IPFS node is ready, so we can start using ipfs-pubsub-room
 ipfs.on('ready', () => {
   room = Room(ipfs, roomName)
