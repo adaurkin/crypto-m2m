@@ -1,5 +1,5 @@
 # Service descriptions
-The idea of the project is to propose a standard of m2m and h2m interaction based on services.
+The idea of the project is to propose a standard of m2m and h2m interaction based on services and location.
 A client requests a service. Service providers respond with their offers. Then the client selects a provider and arranges the deal (on-chain or off-chain).
 
 ## Examples

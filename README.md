@@ -19,8 +19,8 @@ Allows:
 * Deal
 
 ## Workflow
-* A client (human to machine) broadcasts (pub) an off-chain Request for service
-* Service providers are subscribed to the channels they an serve (based on location and service)
+* A client (human or machine) broadcasts (pub) an off-chain Request for service
+* Service providers are subscribed to the channels they can serve (based on location and service)
 * Client chooses the best offer based on location, price and other parameters
 * Client initiates a deal with the service provider (on-chain or off-chain)
 ** (Preferred) Client opens a payment channel to the service provider in amount sufficient for the deal
@@ -31,6 +31,13 @@ Allows:
 
 ## Plug'n'play
 One of the ideas of the project is to make a device integration into service ecosystem as easy as possible. A device should ideally be preconfigured and ready to serve right after manufacturing.
+
+# Plans for future development
+* Payment optimization
+* Provable off-chain communication
+* Reputation system for fraud prevention
+* Supply vs Demand analysis
+* Dynamic pricing (real time bidding?)
 
 # Feedback
 If you want to support crypto-m2m you can drop some Ether here :-)
