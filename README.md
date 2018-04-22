@@ -1,4 +1,4 @@
-# Machine to machine crypto economy based on services
+# Machine to machine crypto economy based on services and location
 Allows:
 * easy device discovery
 * easy m2m communications
@@ -28,6 +28,9 @@ Allows:
 * The provider delivers/fulfills the service to the client
 * The client releases funds (preferrably in small parts depending on the progress - if it can be measured)
 * When the service is fully fulfilled the deal is finalised and the funds may be sent to parties (released) or kept for future deals
+
+## Plug'n'play
+One of the ideas of the project is to make a device integration into service ecosystem as easy as possible. A device should ideally be preconfigured and ready to serve right after manufacturing.
 
 # Feedback
 If you want to support crypto-m2m you can drop some Ether here :-)
